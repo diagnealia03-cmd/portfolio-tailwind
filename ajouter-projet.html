@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ajouter un nouveau projet à mon portfolio.">
+    <title>Ajouter un Projet - Portfolio Alia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <header>
+        <!-- Navbar -->
+        <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+            <!-- Logo -->
+            <h1 class="text-xl font-bold text-blue-600">Alia</h1>
+            <!-- Menu -->
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-gray-700 hover:text-blue-600">Accueil</a></li>
+                <li><a href="lister-projet.html" class="text-gray-700 hover:text-blue-600">Projets</a></li>
+                <li><a href="ajouter-projet.html" class="text-gray-700 hover:text-blue-600">Ajouter Projet</a></li>
+                <li><a href="index.html#contact" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="p-10">
+        <h2 class="text-3xl font-bold text-center mb-8">Ajouter un Nouveau Projet</h2>
+        <form class="max-w-lg mx-auto flex flex-col gap-4" action="#" method="post">
+            <input type="text" name="title" placeholder="Titre du projet"
+                class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                required>
+            <textarea name="description" placeholder="Description du projet" rows="4"
+                class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                required></textarea>
+            <input type="text" name="technologies" placeholder="Technologies utilisées (séparées par des virgules)"
+                class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+            <input type="url" name="image" placeholder="URL de l'image (optionnel)"
+                class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+            <input type="url" name="link" placeholder="Lien vers le projet (optionnel)"
+                class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+            <button type="submit" class="bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Ajouter le
+                Projet</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 text-center">
+        <p>© 2026 Alia Diagne - Tous droits réservés</p>
+    </footer>
+
+</body>
+
+</html>
