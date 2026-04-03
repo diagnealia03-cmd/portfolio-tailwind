@@ -3,97 +3,88 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Mon Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio d'Alia, étudiante en Systèmes Réseaux et Télécoms passionnée par le développement web.">
+    <title>Mon Portfolio - Alia</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100">
+    <header>
+        <!-- Navbar -->
+        <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+            <!-- Logo -->
+            <h1 class="text-xl font-bold text-blue-600">Alia</h1>
+            <!-- Menu -->
+            <ul class="flex space-x-6">
+                <li><a href="#hero" class="text-gray-700 hover:text-blue-600">Accueil</a></li>
+                <li><a href="#projets" class="text-gray-700 hover:text-blue-600">Projets</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Navbar -->
-    <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="flex flex-col items-center justify-center text-center h-screen">
+            <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+                Bonjour, je suis Alia
+            </h2>
+            <p class="text-gray-600 mb-6 max-w-xl">
+                Étudiante en Systèmes Réseaux et Télécoms passionnée par le développement web.
+            </p>
+            <a href="#projets" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 inline-block">
+                Voir mes projets
+            </a>
+        </section>
 
-        <!-- Logo -->
-        <h1 class="text-xl font-bold text-blue-600">Alia</h1>
-
-        <!-- Menu -->
-        <ul class="flex space-x-6">
-            <li><a href="#hero" class="text-gray-700 hover:text-blue-600">Accueil</a></li>
-            <li><a href="#projets" class="text-gray-700 hover:text-blue-600">Projets</a></li>
-            <li><a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a></li>
-        </ul>
-
-    </nav>
-    <!-- Hero Section -->
-    <section id="hero" class="flex flex-col items-center justify-center text-center h-screen">
-
-        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
-            Bonjour, je suis Alia
-        </h2>
-
-        <p class="text-gray-600 mb-6 max-w-xl">
-            Étudiante en Systèmes Réseaux et Télécoms passionnée par le développement web.
-        </p>
-
-        <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
-            Voir mes projets
-        </button>
-
-    </section>
-    <!-- Section Projets -->
-    <section id="projets" class="p-10 bg-gray-100">
-
-        <h2 class="text-3xl font-bold text-center mb-8">
-            Mes Projets
-        </h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-            <!-- Projet 1 -->
-            <div class="bg-white p-6 rounded-lg shadow-md hover:scale-105 transform transition duration-300">
-                <h3 class="text-xl font-bold mb-2">Projet Portfolio</h3>
-                <p class="text-gray-600">Application web pour présenter mes projets.</p>
+        <!-- Section Projets -->
+        <section id="projets" class="p-10 bg-gray-100">
+            <h2 class="text-3xl font-bold text-center mb-8">
+                Mes Projets
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Projet 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:scale-105 transform transition duration-300">
+                    <h3 class="text-xl font-bold mb-2">Projet Portfolio</h3>
+                    <p class="text-gray-600">Application web pour présenter mes projets.</p>
+                </div>
+                <!-- Projet 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:scale-105 transform transition duration-300">
+                    <h3 class="text-xl font-bold mb-2">Gestion Réseau</h3>
+                    <p class="text-gray-600">Projet de configuration réseau et sécurité.</p>
+                </div>
+                <!-- Projet 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:scale-105 transform transition duration-300">
+                    <h3 class="text-xl font-bold mb-2">Application Web</h3>
+                    <p class="text-gray-600">Projet développé avec HTML et CSS.</p>
+                </div>
             </div>
+        </section>
 
-            <!-- Projet 2 -->
-            <div class="bg-white p-6 rounded-lg shadow-md hover:scale-105 transform transition duration-300">
-                <h3 class="text-xl font-bold mb-2">Gestion Réseau</h3>
-                <p class="text-gray-600">Projet de configuration réseau et sécurité.</p>
-            </div>
+        <!-- Section Contact -->
+        <section id="contact" class="p-10 bg-white">
+            <h2 class="text-3xl font-bold text-center mb-8">
+                Contactez-moi
+            </h2>
+            <form class="max-w-md mx-auto flex flex-col gap-4" action="#" method="post">
+                <input type="text" name="name" placeholder="Votre nom"
+                    class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                    required>
+                <input type="email" name="email" placeholder="Votre email"
+                    class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                    required>
+                <textarea name="message" placeholder="Votre message" rows="4"
+                    class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                    required></textarea>
+                <button type="submit" class="bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+                    Envoyer
+                </button>
+            </form>
+        </section>
+    </main>
 
-            <!-- Projet 3 -->
-            <div class="bg-white p-6 rounded-lg shadow-md hover:scale-105 transform transition duration-300">
-                <h3 class="text-xl font-bold mb-2">Application Web</h3>
-                <p class="text-gray-600">Projet développé avec HTML et CSS.</p>
-            </div>
-
-        </div>
-
-    </section>
-    <!-- Section Contact -->
-    <section id="contact" class="p-10 bg-white">
-
-        <h2 class="text-3xl font-bold text-center mb-8">
-            Contactez-moi
-        </h2>
-
-        <form class="max-w-md mx-auto flex flex-col gap-4">
-
-            <input type="text" placeholder="Votre nom"
-                class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
-
-            <input type="email" placeholder="Votre email"
-                class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
-
-            <textarea placeholder="Votre message" rows="4"
-                class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
-
-            <button type="submit" class="bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
-                Envoyer
-            </button>
-
-        </form>
-
-    </section>
     <!-- Footer -->
     <footer class="bg-gray-800 text-white p-6 text-center">
         <p>© 2026 Alia Diagne - Tous droits réservés</p>
